@@ -1,398 +1,475 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css" id="theme">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css"
+    />
     <style>
-        .reveal { font-family: 'Roboto Mono', monospace; }
-        .reveal h1, .reveal h2, .reveal h3 { color: #6a1b9a; font-family: 'Roboto Mono', monospace; }
-        .reveal .slides section .fragment { opacity: 0.3; }
-        .reveal .slides section .fragment.visible { opacity: 1; }
-        .strategy-card { 
-            background: #f5f5f5; 
-            padding: 20px; 
-            margin: 10px; 
-            border-left: 4px solid #6a1b9a; 
-            border-radius: 5px; 
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      .reveal {
+        background: linear-gradient(-45deg, #f3e5f5, #e8eaf6, #e1f5fe, #f9fbe7) !important;
+        background-size: 400% 400% !important;
+        animation: gradientShift 20s ease infinite !important;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
         }
-        .quote { 
-            font-style: italic; 
-            border-left: 3px solid #ccc; 
-            padding-left: 20px; 
-            margin: 20px 0; 
+        50% {
+          background-position: 100% 50%;
         }
-        .highlight { color: #6a1b9a; font-weight: bold; }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .reveal {
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .reveal .slides section {
+        background: transparent;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: #6a1b9a;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .reveal .slides section .fragment {
+        opacity: 0.3;
+      }
+      .reveal .slides section .fragment.visible {
+        opacity: 1;
+      }
+
+      .strategy-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 10px;
+        border-left: 4px solid #6a1b9a;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+      }
+
+      .quote {
+        font-style: italic;
+        border-left: 3px solid #6a1b9a;
+        padding-left: 20px;
+        margin: 20px 0;
+        background: rgba(106, 27, 154, 0.05);
+        border-radius: 5px;
+        padding: 15px 20px;
+      }
+
+      .highlight {
+        color: #6a1b9a;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="reveal">
-        <div class="slides">
-            
-            <!-- Title Slide -->
-            <section>
-                <h1>🎨 Vibe Coding Lab ✨</h1>
-                <h3>Creative Coding Through Intuition & AI 🤖</h3>
-                <p>An evening of exploration, experimentation, and collective creativity 🚀</p>
-            </section>
+      <div class="slides">
+        <!-- Title Slide -->
+        <section>
+          <h1>🎨 Vibe Coding Lab ✨</h1>
+          <h3>Creative Coding Through Intuition & AI 🤖</h3>
+          <p>An evening of exploration, experimentation, and collective creativity 🚀</p>
+        </section>
 
-            <!-- Agenda -->
-            <section>
-                <h2>🗺️ Tonight's Journey</h2>
-                <ol>
-                    <li class="fragment">❓ What is Vibe Coding?</li>
-                    <li class="fragment">⚙️ Technical Strategies</li>
-                    <li class="fragment">🎨 Creative Strategies</li>
-                    <li class="fragment">💬 Q&A</li>
-                    <li class="fragment">🎪 Live Demo (Vera Molnár)</li>
-                    <li class="fragment">🚀 Let's Code Together!</li>
-                </ol>
-            </section>
+        <!-- Agenda -->
+        <section>
+          <h2>🗺️ Tonight's Journey</h2>
+          <ol>
+            <li class="fragment">❓ What is Vibe Coding?</li>
+            <li class="fragment">⚙️ Technical Strategies</li>
+            <li class="fragment">🎨 Creative Strategies</li>
+            <li class="fragment">💬 Q&A</li>
+            <li class="fragment">🎪 Live Demo (Vera Molnár)</li>
+            <li class="fragment">🚀 Let's Code Together!</li>
+          </ol>
+        </section>
 
-            <!-- Introduction Section -->
-            <section>
-                <section>
-                    <h2>👋 Let's Get to Know Each Other</h2>
-                    <div class="fragment">
-                        <h3>🗳️ Quick Poll:</h3>
-                        <ul>
-                            <li>💻 What's your programming experience?</li>
-                            <li>🤖 How familiar are you with AI prompting?</li>
-                        </ul>
-                    </div>
-                </section>
+        <!-- Introduction Section -->
+        <section>
+          <section>
+            <h2>👋 Let's Get to Know Each Other</h2>
+            <div class="fragment">
+              <h3>🗳️ Quick Poll:</h3>
+              <ul>
+                <li>💻 What's your programming experience?</li>
+                <li>🤖 How familiar are you with AI prompting?</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>✨ What is Vibe Coding?</h2>
-                    <div class="quote fragment">
-                        "A gentler, more intuitive path to building software. It enables anyone to bring ideas to life." 💡
-                        <br><em>- Rick Rubin, "The Way of Code" 📖</em>
-                    </div>
-                </section>
+          <section>
+            <h2>✨ What is Vibe Coding?</h2>
+            <div class="quote fragment">
+              "A gentler, more intuitive path to building software. It enables anyone to bring ideas
+              to life." 💡
+              <br /><em>- Rick Rubin, "The Way of Code" 📖</em>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🎯 Vibe Coding Principles</h2>
-                    <ul>
-                        <li class="fragment">🧠 Encourages <span class="highlight">intuitive, human-centric</span> design</li>
-                        <li class="fragment">✨ Promotes <span class="highlight">clean, purpose-driven</span> outputs</li>
-                        <li class="fragment">💬 Values <span class="highlight">vision and communication</span> over technical expertise</li>
-                        <li class="fragment">🎨 Crafting code with <span class="highlight">intention and essence</span></li>
-                    </ul>
-                </section>
+          <section>
+            <h2>🎯 Vibe Coding Principles</h2>
+            <ul>
+              <li class="fragment">
+                🧠 Encourages <span class="highlight">intuitive, human-centric</span> design
+              </li>
+              <li class="fragment">
+                ✨ Promotes <span class="highlight">clean, purpose-driven</span> outputs
+              </li>
+              <li class="fragment">
+                💬 Values <span class="highlight">vision and communication</span> over technical
+                expertise
+              </li>
+              <li class="fragment">
+                🎨 Crafting code with <span class="highlight">intention and essence</span>
+              </li>
+            </ul>
+          </section>
 
-                <section>
-                    <h2>🔄 In Other Words...</h2>
-                    <h3 class="fragment highlight">🎯 Intent-Driven Development</h3>
-                    <h3 class="fragment">or</h3>
-                    <h3 class="fragment highlight">🚀 Purpose-Driven Development</h3>
-                </section>
+          <section>
+            <h2>🔄 In Other Words...</h2>
+            <h3 class="fragment highlight">🎯 Intent-Driven Development</h3>
+            <h3 class="fragment">or</h3>
+            <h3 class="fragment highlight">🚀 Purpose-Driven Development</h3>
+          </section>
 
-                <section>
-                    <h2>Creative Parallels</h2>
-                    <div style="display: flex; justify-content: space-around;">
-                        <div class="fragment">
-                            <h4>🎵 Musical Jamming</h4>
-                            <p>Improvisation, call & response</p>
-                        </div>
-                        <div class="fragment">
-                            <h4>🎭 Theatersport</h4>
-                            <p>Free-form improv, "yes, and..."</p>
-                        </div>
-                        <div class="fragment">
-                            <h4>🎨 Creative Flow</h4>
-                            <p>Intuitive expression</p>
-                        </div>
-                    </div>
-                </section>
-            </section>
+          <section>
+            <h2>Creative Parallels</h2>
+            <div style="display: flex; justify-content: space-around">
+              <div class="fragment">
+                <h4>🎵 Musical Jamming</h4>
+                <p>Improvisation, call & response</p>
+              </div>
+              <div class="fragment">
+                <h4>🎭 Theatersport</h4>
+                <p>Free-form improv, "yes, and..."</p>
+              </div>
+              <div class="fragment">
+                <h4>🎨 Creative Flow</h4>
+                <p>Intuitive expression</p>
+              </div>
+            </div>
+          </section>
+        </section>
 
-            <!-- Technical Strategies Section -->
-            <section>
-                <section>
-                    <h2>⚙️ Technical Strategies</h2>
-                    <h3>🚀 How to Start Vibe Coding</h3>
-                </section>
+        <!-- Technical Strategies Section -->
+        <section>
+          <section>
+            <h2>⚙️ Technical Strategies</h2>
+            <h3>🚀 How to Start Vibe Coding</h3>
+          </section>
 
-                <section>
-                    <h2>🌐 Web Interfaces</h2>
-                    <h3 class="highlight">🦘 Free Model Hopping</h3>
-                    <ul>
-                        <li class="fragment">🔷 Google Gemini</li>
-                        <li class="fragment">⚡ Vercel's v0 (great for quick vibes!)</li>
-                        <li class="fragment">🤖 Claude</li>
-                        <li class="fragment">💬 ChatGPT</li>
-                        <li class="fragment">🎯 Many more with free tiers</li>
-                    </ul>
-                    <p class="fragment"><em>💡 Pro tip: Use your Google account for easy access</em></p>
-                </section>
+          <section>
+            <h2>🌐 Web Interfaces</h2>
+            <h3 class="highlight">🦘 Free Model Hopping</h3>
+            <ul>
+              <li class="fragment">🔷 Google Gemini</li>
+              <li class="fragment">⚡ Vercel's v0 (great for quick vibes!)</li>
+              <li class="fragment">🤖 Claude</li>
+              <li class="fragment">💬 ChatGPT</li>
+              <li class="fragment">🎯 Many more with free tiers</li>
+            </ul>
+            <p class="fragment"><em>💡 Pro tip: Use your Google account for easy access</em></p>
+          </section>
 
-                <section>
-                    <h2>💻 Local Development Tools</h2>
-                    <div class="fragment">
-                        <h4>🤖 Code Editors with AI:</h4>
-                        <ul>
-                            <li>📝 VS Code + Cline</li>
-                            <li>⚡ Cursor</li>
-                            <li>🌊 Windsurf</li>
-                        </ul>
-                    </div>
-                    <div class="fragment">
-                        <h4>🎯 Perfect Starting Stack:</h4>
-                        <ul>
-                            <li>📄 HTML/JS/CSS in one <code>index.html</code></li>
-                            <li>🟢 NodeJS + <code>npx serve</code></li>
-                            <li>🎨 Three.js or p5.js from CDN</li>
-                        </ul>
-                    </div>
-                </section>
+          <section>
+            <h2>💻 Local Development Tools</h2>
+            <div class="fragment">
+              <h4>🤖 Code Editors with AI:</h4>
+              <ul>
+                <li>📝 VS Code + Cline</li>
+                <li>⚡ Cursor</li>
+                <li>🌊 Windsurf</li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h4>🎯 Perfect Starting Stack:</h4>
+              <ul>
+                <li>📄 HTML/JS/CSS in one <code>index.html</code></li>
+                <li>🟢 NodeJS + <code>npx serve</code></li>
+                <li>🎨 Three.js or p5.js from CDN</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>💬 Prompting Strategies</h2>
-                    <div class="strategy-card fragment">
-                        <h4>🗣️ Natural Language</h4>
-                        <p>Explain to AI like you would to a friend or neighbor 👥</p>
-                    </div>
-                    <div class="strategy-card fragment">
-                        <h4>💡 Useful Phrases</h4>
-                        <ul>
-                            <li>🎨 "Use an HTML canvas element"</li>
-                            <li>🎲 "Add randomness"</li>
-                            <li>🔢 "Give me X options to choose from"</li>
-                            <li>🌐 "Keep in mind to use standard web APIs only"</li>
-                        </ul>
-                    </div>
-                </section>
+          <section>
+            <h2>💬 Prompting Strategies</h2>
+            <div class="strategy-card fragment">
+              <h4>🗣️ Natural Language</h4>
+              <p>Explain to AI like you would to a friend or neighbor 👥</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>💡 Useful Phrases</h4>
+              <ul>
+                <li>🎨 "Use an HTML canvas element"</li>
+                <li>🎲 "Add randomness"</li>
+                <li>🔢 "Give me X options to choose from"</li>
+                <li>🌐 "Keep in mind to use standard web APIs only"</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🎛️ Meta-Features</h2>
-                    <p class="fragment">Ask AI to add controls: 🎮</p>
-                    <ul>
-                        <li class="fragment">🔄 Press 'R' to refresh/regenerate</li>
-                        <li class="fragment">🎚️ Sliders for parameters</li>
-                        <li class="fragment">🎨 Color pickers</li>
-                        <li class="fragment">🎲 "Entropy" or randomness controls</li>
-                        <li class="fragment">⌨️ Text inputs for live changes</li>
-                    </ul>
-                </section>
+          <section>
+            <h2>🎛️ Meta-Features</h2>
+            <p class="fragment">Ask AI to add controls: 🎮</p>
+            <ul>
+              <li class="fragment">🔄 Press 'R' to refresh/regenerate</li>
+              <li class="fragment">🎚️ Sliders for parameters</li>
+              <li class="fragment">🎨 Color pickers</li>
+              <li class="fragment">🎲 "Entropy" or randomness controls</li>
+              <li class="fragment">⌨️ Text inputs for live changes</li>
+            </ul>
+          </section>
 
-                <section>
-                    <h2>📚 Documentation Approach</h2>
-                    <div class="fragment">
-                        <h4>🛤️ Two Paths:</h4>
-                        <ol>
-                            <li>🔨 Build first → Ask for README.md</li>
-                            <li>📝 Write README.md → Ask AI to build it</li>
-                        </ol>
-                    </div>
-                    <p class="fragment"><em>✨ Both work beautifully for vibe coding!</em></p>
-                </section>
+          <section>
+            <h2>📚 Documentation Approach</h2>
+            <div class="fragment">
+              <h4>🛤️ Two Paths:</h4>
+              <ol>
+                <li>🔨 Build first → Ask for README.md</li>
+                <li>📝 Write README.md → Ask AI to build it</li>
+              </ol>
+            </div>
+            <p class="fragment"><em>✨ Both work beautifully for vibe coding!</em></p>
+          </section>
 
-                <section>
-                    <h2>🚀 For the Pros</h2>
-                    <h3 class="highlight">🏠 Local Liberation</h3>
-                    <ul>
-                        <li class="fragment">💻 Run your own local models</li>
-                        <li class="fragment">🔒 Complete privacy</li>
-                        <li class="fragment">💪 Requires strong hardware</li>
-                        <li class="fragment">☁️ Cloud variant: Run Ollama in cloud</li>
-                    </ul>
-                </section>
-            </section>
+          <section>
+            <h2>🚀 For the Pros</h2>
+            <h3 class="highlight">🏠 Local Liberation</h3>
+            <ul>
+              <li class="fragment">💻 Run your own local models</li>
+              <li class="fragment">🔒 Complete privacy</li>
+              <li class="fragment">💪 Requires strong hardware</li>
+              <li class="fragment">☁️ Cloud variant: Run Ollama in cloud</li>
+            </ul>
+          </section>
+        </section>
 
-            <!-- Creative Strategies Section -->
-            <section>
-                <section>
-                    <h2>🎨 Creative Strategies</h2>
-                    <h3>✨ The Art of Vibe Coding</h3>
-                </section>
+        <!-- Creative Strategies Section -->
+        <section>
+          <section>
+            <h2>🎨 Creative Strategies</h2>
+            <h3>✨ The Art of Vibe Coding</h3>
+          </section>
 
-                <section>
-                    <h2>🏺 The Archaeological Approach</h2>
-                    <div class="strategy-card">
-                        <p>Starting with found code and excavating/reimagining them 🔍</p>
-                        <ul>
-                            <li>"What if this old Processing sketch was 3D?" 📐</li>
-                            <li>"What if this responded to audio?" 🎵</li>
-                        </ul>
-                    </div>
-                </section>
+          <section>
+            <h2>🏺 The Archaeological Approach</h2>
+            <div class="strategy-card">
+              <p>Starting with found code and excavating/reimagining them 🔍</p>
+              <ul>
+                <li>"What if this old Processing sketch was 3D?" 📐</li>
+                <li>"What if this responded to audio?" 🎵</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>📦 Constraint Boxing</h2>
-                    <div class="strategy-card">
-                        <p>Deliberately imposing arbitrary limitations 🚧</p>
-                        <ul>
-                            <li>🎨 "Only use three colors"</li>
-                            <li>📏 "No curves allowed"</li>
-                            <li>🐦 "Must fit in a tweet"</li>
-                            <li>📊 "Only mathematical functions from 1970"</li>
-                        </ul>
-                        <p><em>⚡ The constraint becomes the creative engine</em></p>
-                    </div>
-                </section>
+          <section>
+            <h2>📦 Constraint Boxing</h2>
+            <div class="strategy-card">
+              <p>Deliberately imposing arbitrary limitations 🚧</p>
+              <ul>
+                <li>🎨 "Only use three colors"</li>
+                <li>📏 "No curves allowed"</li>
+                <li>🐦 "Must fit in a tweet"</li>
+                <li>📊 "Only mathematical functions from 1970"</li>
+              </ul>
+              <p><em>⚡ The constraint becomes the creative engine</em></p>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🔀 The Remix Strategy</h2>
-                    <div class="strategy-card">
-                        <p>Taking two unrelated concepts and forcing them together 🤝</p>
-                        <ul>
-                            <li>🔬 "Conway's Game of Life meets Arabic calligraphy"</li>
-                            <li>📈 "Stock market data as Medieval manuscripts"</li>
-                        </ul>
-                    </div>
-                </section>
+          <section>
+            <h2>🔀 The Remix Strategy</h2>
+            <div class="strategy-card">
+              <p>Taking two unrelated concepts and forcing them together 🤝</p>
+              <ul>
+                <li>🔬 "Conway's Game of Life meets Arabic calligraphy"</li>
+                <li>📈 "Stock market data as Medieval manuscripts"</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>💭 Emotional Debugging</h2>
-                    <div class="strategy-card">
-                        <p>Using coding as mood regulation 🧘</p>
-                        <ul>
-                            <li>💥 Chaotic particle systems when frustrated</li>
-                            <li>🌊 Gentle wave functions when contemplative</li>
-                            <li>📐 Rigid geometric patterns when seeking control</li>
-                        </ul>
-                    </div>
-                </section>
+          <section>
+            <h2>💭 Emotional Debugging</h2>
+            <div class="strategy-card">
+              <p>Using coding as mood regulation 🧘</p>
+              <ul>
+                <li>💥 Chaotic particle systems when frustrated</li>
+                <li>🌊 Gentle wave functions when contemplative</li>
+                <li>📐 Rigid geometric patterns when seeking control</li>
+              </ul>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🌊 Chaos Surfing</h2>
-                    <div class="strategy-card">
-                        <p>Challenge the AI to "go full entropy" 🎲</p>
-                        <ul>
-                            <li>🔥 Crank creativity dial to maximum</li>
-                            <li>🤗 Embrace unexpected outputs</li>
-                            <li>⛏️ Mine randomness for creative seeds</li>
-                        </ul>
-                        <p><em>💭 Like accessing the AI's dream state</em></p>
-                    </div>
-                </section>
+          <section>
+            <h2>🌊 Chaos Surfing</h2>
+            <div class="strategy-card">
+              <p>Challenge the AI to "go full entropy" 🎲</p>
+              <ul>
+                <li>🔥 Crank creativity dial to maximum</li>
+                <li>🤗 Embrace unexpected outputs</li>
+                <li>⛏️ Mine randomness for creative seeds</li>
+              </ul>
+              <p><em>💭 Like accessing the AI's dream state</em></p>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🤝 Collaborative Consciousness</h2>
-                    <div class="strategy-card">
-                        <p>Treating AI as genuine creative partner 🤖</p>
-                        <p>The conversation itself becomes part of the artistic process 💬</p>
-                        <p><em>✨ Generating ideas neither human nor AI would reach alone</em></p>
-                    </div>
-                </section>
+          <section>
+            <h2>🤝 Collaborative Consciousness</h2>
+            <div class="strategy-card">
+              <p>Treating AI as genuine creative partner 🤖</p>
+              <p>The conversation itself becomes part of the artistic process 💬</p>
+              <p><em>✨ Generating ideas neither human nor AI would reach alone</em></p>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🔄 Responsive Evolution</h2>
-                    <div class="strategy-card">
-                        <p>Each iteration responds to what the previous step revealed 👂</p>
-                        <p>Not following predetermined plans but listening to what the code tells you 🎵</p>
-                        <p><em>🐛 Bugs become creative prompts</em></p>
-                    </div>
-                </section>
+          <section>
+            <h2>🔄 Responsive Evolution</h2>
+            <div class="strategy-card">
+              <p>Each iteration responds to what the previous step revealed 👂</p>
+              <p>Not following predetermined plans but listening to what the code tells you 🎵</p>
+              <p><em>🐛 Bugs become creative prompts</em></p>
+            </div>
+          </section>
 
-                <section>
-                    <h2>🧠 Mental Composting</h2>
-                    <div class="strategy-card">
-                        <p>Ideas ferment in your subconscious 🌱</p>
-                        <p>Like aging wine or making sourdough 🍷🍞</p>
-                        <p><em>⏰ Time and mental chemistry do the work</em></p>
-                    </div>
-                </section>
+          <section>
+            <h2>🧠 Mental Composting</h2>
+            <div class="strategy-card">
+              <p>Ideas ferment in your subconscious 🌱</p>
+              <p>Like aging wine or making sourdough 🍷🍞</p>
+              <p><em>⏰ Time and mental chemistry do the work</em></p>
+            </div>
+          </section>
 
-                <section>
-                    <h2>✨ More Creative Strategies</h2>
-                    <ul>
-                        <li class="fragment"><strong>🍞 The Breadcrumb Trail:</strong> Scattered incomplete ideas that cross-pollinate</li>
-                        <li class="fragment"><strong>🎨 Gallery Prep:</strong> Transforming sketches into exhibition-ready work</li>
-                        <li class="fragment"><strong>🦘 Sketch Hopping:</strong> Creative restlessness, moving between projects</li>
-                    </ul>
-                </section>
-            </section>
+          <section>
+            <h2>✨ More Creative Strategies</h2>
+            <ul>
+              <li class="fragment">
+                <strong>🍞 The Breadcrumb Trail:</strong> Scattered incomplete ideas that
+                cross-pollinate
+              </li>
+              <li class="fragment">
+                <strong>🎨 Gallery Prep:</strong> Transforming sketches into exhibition-ready work
+              </li>
+              <li class="fragment">
+                <strong>🦘 Sketch Hopping:</strong> Creative restlessness, moving between projects
+              </li>
+            </ul>
+          </section>
+        </section>
 
-            <!-- Q&A Section -->
-            <section>
-                <h2>❓ Questions & Answers</h2>
-                <p>What would you like to know about vibe coding? 🤔</p>
-                <div class="fragment">
-                    <h4>💭 Common Questions:</h4>
-                    <ul>
-                        <li>⏰ How do I know when to stop iterating?</li>
-                        <li>🤝 What if the AI doesn't understand my vision?</li>
-                        <li>⚖️ How do I balance structure with spontaneity?</li>
-                    </ul>
-                </div>
-            </section>
+        <!-- Q&A Section -->
+        <section>
+          <h2>❓ Questions & Answers</h2>
+          <p>What would you like to know about vibe coding? 🤔</p>
+          <div class="fragment">
+            <h4>💭 Common Questions:</h4>
+            <ul>
+              <li>⏰ How do I know when to stop iterating?</li>
+              <li>🤝 What if the AI doesn't understand my vision?</li>
+              <li>⚖️ How do I balance structure with spontaneity?</li>
+            </ul>
+          </div>
+        </section>
 
-            <!-- Demo Section -->
-            <section>
-                <section>
-                    <h2>🎪 Live Demo</h2>
-                    <h3>✨ Inspired by Vera Molnár</h3>
-                    <p class="fragment">🎨 Pioneer of computer art and algorithmic drawing</p>
-                    <p class="fragment">🚀 We'll vibe code something inspired by her geometric explorations</p>
-                </section>
+        <!-- Demo Section -->
+        <section>
+          <section>
+            <h2>🎪 Live Demo</h2>
+            <h3>✨ Inspired by Vera Molnár</h3>
+            <p class="fragment">🎨 Pioneer of computer art and algorithmic drawing</p>
+            <p class="fragment">
+              🚀 We'll vibe code something inspired by her geometric explorations
+            </p>
+          </section>
 
-                <section>
-                    <h2>🎬 Demo Time!</h2>
-                    <p>Let's see what emerges when we combine: 🧪</p>
-                    <ul>
-                        <li class="fragment">📐 Vera Molnár's geometric precision</li>
-                        <li class="fragment">🤖 AI's creative interpretation</li>
-                        <li class="fragment">💬 Our live creative dialogue</li>
-                    </ul>
-                    <p class="fragment"><em>⚡ Using v0 for real-time creation</em></p>
-                </section>
-            </section>
+          <section>
+            <h2>🎬 Demo Time!</h2>
+            <p>Let's see what emerges when we combine: 🧪</p>
+            <ul>
+              <li class="fragment">📐 Vera Molnár's geometric precision</li>
+              <li class="fragment">🤖 AI's creative interpretation</li>
+              <li class="fragment">💬 Our live creative dialogue</li>
+            </ul>
+            <p class="fragment"><em>⚡ Using v0 for real-time creation</em></p>
+          </section>
+        </section>
 
-            <!-- Closing Thoughts -->
-            <section>
-                <section>
-                    <h2>💭 Closing Thoughts</h2>
-                </section>
+        <!-- Closing Thoughts -->
+        <section>
+          <section>
+            <h2>💭 Closing Thoughts</h2>
+          </section>
 
-                <section>
-                    <h2>🌐 Beyond Web Technologies</h2>
-                    <p class="fragment">We focused on HTML/JS/CSS tonight 📱</p>
-                    <p class="fragment">But vibe coding works with: 🛠️</p>
-                    <ul>
-                        <li class="fragment">🐍 Python</li>
-                        <li class="fragment">🦀 Rust</li>
-                        <li class="fragment">📱 Swift</li>
-                        <li class="fragment">✨ Any language!</li>
-                    </ul>
-                </section>
+          <section>
+            <h2>🌐 Beyond Web Technologies</h2>
+            <p class="fragment">We focused on HTML/JS/CSS tonight 📱</p>
+            <p class="fragment">But vibe coding works with: 🛠️</p>
+            <ul>
+              <li class="fragment">🐍 Python</li>
+              <li class="fragment">🦀 Rust</li>
+              <li class="fragment">📱 Swift</li>
+              <li class="fragment">✨ Any language!</li>
+            </ul>
+          </section>
 
-                <section>
-                    <h2>🔮 The Future is Changing</h2>
-                    <p class="fragment">🤖 AI coding agents will transform software development</p>
-                    <p class="fragment">🎨 Vibe coding makes this accessible to everyone</p>
-                    <h3 class="fragment highlight">🌊 Let your creativity flow!</h3>
-                </section>
-            </section>
+          <section>
+            <h2>🔮 The Future is Changing</h2>
+            <p class="fragment">🤖 AI coding agents will transform software development</p>
+            <p class="fragment">🎨 Vibe coding makes this accessible to everyone</p>
+            <h3 class="fragment highlight">🌊 Let your creativity flow!</h3>
+          </section>
+        </section>
 
-            <!-- Let's Get Started -->
-            <section>
-                <section>
-                    <h2>🚀 Let's Get Started!</h2>
-                    <h3 class="fragment">🎵 Time for the Vibe Coding Jam</h3>
-                </section>
+        <!-- Let's Get Started -->
+        <section>
+          <section>
+            <h2>🚀 Let's Get Started!</h2>
+            <h3 class="fragment">🎵 Time for the Vibe Coding Jam</h3>
+          </section>
 
-                <section>
-                    <h2>👥 Pair Up with Neighbors</h2>
-                    <ul>
-                        <li class="fragment">🤝 Share your approaches</li>
-                        <li class="fragment">💬 Discuss prompts</li>
-                        <li class="fragment">💡 Exchange suggestions</li>
-                        <li class="fragment">🎯 Explain what you want to build</li>
-                    </ul>
-                    <p class="fragment"><em>🎸 Like bands jamming together</em></p>
-                </section>
+          <section>
+            <h2>👥 Pair Up with Neighbors</h2>
+            <ul>
+              <li class="fragment">🤝 Share your approaches</li>
+              <li class="fragment">💬 Discuss prompts</li>
+              <li class="fragment">💡 Exchange suggestions</li>
+              <li class="fragment">🎯 Explain what you want to build</li>
+            </ul>
+            <p class="fragment"><em>🎸 Like bands jamming together</em></p>
+          </section>
 
-                <section>
-                    <h2>🎉 Ready to Vibe Code?</h2>
-                    <h1 class="fragment highlight">✨ Let's Begin! 🚀</h1>
-                </section>
-            </section>
-
-        </div>
+          <section>
+            <h2>🎉 Ready to Vibe Code?</h2>
+            <h1 class="fragment highlight">✨ Let's Begin! 🚀</h1>
+          </section>
+        </section>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
@@ -400,12 +477,12 @@
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
     <script>
-        Reveal.initialize({
-            hash: true,
-            transition: 'slide',
-            transitionSpeed: 'default',
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-        });
+      Reveal.initialize({
+        hash: true,
+        transition: 'slide',
+        transitionSpeed: 'default',
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
     </script>
-</body>
+  </body>
 </html>
