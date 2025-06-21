@@ -41,11 +41,14 @@ Also, when vibe coding, you can let the AI add meta-features like controls: for 
 
 If you like to work with text, choose some basic input text like a Shakespeare sonnet (most models know them by heart), or enrich your prompt with input you want to have the model start with.
 
+It is also very common to ask the model to write an accompanying "README.md" file in which it is described what is happening in the index.html, or the other way around, you can also start with a "README.md" and explain your plan extensively and then ask the model to read it and start building what is described in it.
+
 
 ##### prompting
 Regardig the vibe coding strategies, I want to pay attention to what is considered prompting and what you need to be aware of. The different strategies ask for different styles of prompting. Important to note is that you can also ask the model to write you a prompt. Sometimes you need to tell it to be concise and short, sometimes you want to be more verbose. You should make that explicit. To increase the temperature, you can ask the model to be acting so or call it "go full entropy on this one", or ask the model up front how to make it output more creatively.
 
-Common concepts that can be useful are "use an HTML canvas element", "add a HTML textArea", "edge detection", "iterate", "add randomness" or try something out and ask the model whether it is clear what you mean, otherwise it might be able to suggest options for what you want. Also, ask it explicitly for "give me X options to choose from", "keep in mind to use standard web apis only" or "when creating sounds, start with low volume not to disturb my fellow humans".
+Common concepts that can be useful are "use an HTML canvas element", "add a HTML textArea", "edge detection", "iterate", "add randomness" or try something out and ask the model whether it is clear what you mean, otherwise it might be able to suggest options for what you want. Also, ask it explicitly for "give me X options to choose from", "keep in mind to use standard web apis only" or "when creating sounds, start with low volume not to disturb my fellow humans", "define a color scheme taking colors from the color wheel".
+Use natural language as if you're explaining your partner, neighbor, friend, what you want to achieve, and do not forget that a model needs some form of context, like us humans.
 
 ##### for the pros
 "Local libaration" : run your own local model
