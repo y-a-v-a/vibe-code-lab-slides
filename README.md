@@ -1,4 +1,4 @@
-# Vibe Coding Lab <�
+# Vibe Coding Lab
 
 A presentation about creative coding through intuition and AI.
 
