@@ -2,6 +2,8 @@
 
 A presentation about creative coding through intuition and AI.
 
+![Screenshot](assets/Screenshot%202025-06-23%20at%2009.16.23.png)
+
 ## About
 
 This slide deck introduces "Vibe Coding" - a gentler, more intuitive approach to building software that enables anyone to bring ideas to life through AI collaboration.
