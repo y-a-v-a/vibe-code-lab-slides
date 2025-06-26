@@ -2,7 +2,7 @@
 
 A presentation about creative coding through intuition and AI.
 
-![Screenshot](assets/Screenshot%202025-06-23%20at%2009.16.23.png)
+![Screenshot](assets/Screenshot%202025-06-26%20at%2022.33.16.png)
 
 ## About
 
