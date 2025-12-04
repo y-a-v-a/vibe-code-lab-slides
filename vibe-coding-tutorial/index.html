@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css"
+    />
+    <style>
+      :root {
+        --r-main-font-size: 29px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html head + body.reveal-viewport {
+        background-image: linear-gradient(-45deg, #c794d9, #9ca8dd, #64c5f7, #dcedc8) !important;
+        background-size: 400% 400% !important;
+        animation: gradientShift 16s ease infinite !important;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 0%;
+        }
+        25% {
+          background-position: 100% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        75% {
+          background-position: 0% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .reveal {
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .reveal .slides section {
+        background: transparent;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: #6a1b9a;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .reveal .title-slide h1 {
+        font-size: 2.5em;
+      }
+
+      .date-text {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+      }
+
+      .reveal .slides section .fragment {
+        opacity: 0.3;
+      }
+      .reveal .slides section .fragment.visible {
+        opacity: 1;
+      }
+
+      .strategy-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 10px;
+        border-left: 4px solid #6a1b9a;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+      }
+
+      .quote {
+        font-style: italic;
+        border-left: 3px solid #6a1b9a;
+        padding-left: 20px;
+        margin: 20px 0;
+        background: rgba(106, 27, 154, 0.05);
+        border-radius: 5px;
+        padding: 15px 20px;
+      }
+
+      .highlight {
+        color: #6a1b9a;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Opening Slide with Image -->
+        <section>
+          <img src="IMG_6210.PNG" alt="Vibe Coding" style="max-width: 80%; max-height: 80vh; margin: auto;" />
+        </section>
+
+        <!-- What is Vibe Coding? -->
+        <section>
+          <h2>✨ What is Vibe Coding?</h2>
+          <div class="quote">
+            "Intent based, conversational, iterative development with AI as a partner" 🤝
+          </div>
+          <div>
+            <p><span class="highlight">Not:</span> Giving up control or blindly accepting code ❌</p>
+            <p><span class="highlight">Is:</span> Rapid prototyping, learning, and refinement ✅</p>
+          </div>
+          <div class="fragment">
+            <h3>🔄 Key Mindset Shift</h3>
+            <p>From <em>"I need to know how"</em> to <em>"I need to articulate what"</em> 💡</p>
+          </div>
+          <p class="date-text">Vincent Bruijn 2025-12-04 G-STAR HQ Amsterdam</p>
+        </section>
+
+        <!-- The Vibe Coding Workflow -->
+        <section>
+          <h2>🔄 The Vibe Coding Workflow</h2>
+          <h3 class="highlight">The Core Loop</h3>
+          <div class="strategy-card">
+            <h4>Describe → Generate → Test → Refine → Repeat</h4>
+          </div>
+          <div>
+            <p><span class="highlight">Each step is:</span></p>
+            <ul>
+              <li>📏 Small and testable</li>
+              <li>🧱 Builds on the last</li>
+              <li>⚡ Quick to validate</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Progressive Complexity Section -->
+        <!-- <section>
+          <section>
+            <h2>📊 Progressive Complexity</h2>
+            <h3>Three Levels of Mastery</h3>
+            <div>
+              <p>🥉 Level 1: The Quick Win</p>
+              <p>🥈 Level 2: The Practical Tool</p>
+              <p>🥇 Level 3: The Sophisticated Solution</p>
+            </div>
+          </section> -->
+
+          <!-- Level 1: The Quick Win -->
+          <!-- <section>
+            <h2>🥉 Level 1: The Quick Win</h2>
+            <h3 class="highlight">Single-purpose tools</h3>
+            <div class="strategy-card">
+              <h4>🎯 Strategy: Start with one clear goal</h4>
+              <ul>
+                <li>✅ "Load a CSV and show it as a table"</li>
+                <li>✅ "Filter a list by typing"</li>
+                <li>✅ "Convert text to uppercase"</li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h4>💡 Things to keep in mind:</h4>
+              <ul>
+                <li>📝 Be specific about inputs and outputs</li>
+                <li>🔬 Test with small data first</li>
+                <li>❓ Ask for explanations of any confusing parts</li>
+              </ul>
+            </div>
+          </section> -->
+
+          <!-- <section>
+            <h2>🥉 Level 1: Common Pain Points</h2>
+            <div class="strategy-card">
+              <h4>😫 Vague requests</h4>
+              <p>"Make something to check products"</p>
+            </div>
+            <div class="strategy-card">
+              <h4>✅ Specific requests</h4>
+              <p>"Show a table of products where the price is missing"</p>
+            </div>
+            <div>
+              <h3 class="highlight">⚡ The Power</h3>
+              <p>In 5 minutes, you have a working tool 🚀</p>
+              <p>No waiting for IT • Can iterate immediately 🔄</p>
+            </div>
+          </section> -->
+
+          <!-- Level 2: The Practical Tool -->
+          <!-- <section>
+            <h2>🥈 Level 2: The Practical Tool</h2>
+            <h3 class="highlight">Multi-step workflows</h3>
+            <div class="strategy-card">
+              <h4>🎯 Strategy: Combine inputs, logic, and outputs</h4>
+              <ul>
+                <li>✅ "Load data, validate it, highlight issues"</li>
+                <li>✅ "Compare two datasets and show differences"</li>
+                <li>✅ "Generate a report with charts"</li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h4>💡 Things to keep in mind:</h4>
+              <ul>
+                <li>📦 Break complex tasks into chunks</li>
+                <li>✔️ Validate each chunk before moving on</li>
+                <li>❓ Ask AI to explain the logic</li>
+              </ul>
+            </div>
+          </section> -->
+
+          <!-- <section>
+            <h2>🥈 Level 2: Common Pain Points</h2>
+            <div class="strategy-card">
+              <h4>😫 Everything at once</h4>
+              <p>Overwhelming, hard to debug</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>✅ Incremental building</h4>
+              <p>"First show the table. Now add validation. Now add highlighting."</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>😫 Accepting code blindly</h4>
+              <p>You don't understand it</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>✅ Asking for explanations</h4>
+              <p>"What does this .filter() do?"</p>
+            </div>
+          </section> -->
+
+          <!-- Level 3: The Sophisticated Solution -->
+          <!-- <section>
+            <h2>🥇 Level 3: The Sophisticated Solution</h2>
+            <h3 class="highlight">Reusable, maintainable code</h3>
+            <div class="strategy-card fragment">
+              <h4>🎯 Strategy: Think about edge cases, UX, and maintainability</h4>
+              <ul>
+                <li>✅ "Handle errors gracefully"</li>
+                <li>✅ "Add export functionality"</li>
+                <li>✅ "Make it configurable"</li>
+                <li>✅ "Document how it works"</li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h4>💡 Things to keep in mind:</h4>
+              <ul>
+                <li>🔍 Use AI for code review</li>
+                <li>📚 Ask for best practices</li>
+                <li>📝 Request documentation</li>
+                <li>👥 Think about the next user</li>
+              </ul>
+            </div>
+          </section> -->
+
+          <!-- <section>
+            <h2>🥇 Level 3: Common Pain Points</h2>
+            <div class="strategy-card">
+              <h4>😫 Feature creep</h4>
+              <p>Tool becomes complex and brittle</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>✅ Focused iteration</h4>
+              <p>Add one improvement at a time</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>😫 No error handling</h4>
+              <p>Tool breaks on unexpected input</p>
+            </div>
+            <div class="strategy-card fragment">
+              <h4>✅ Defensive coding</h4>
+              <p>"What if the file is empty? What if columns are missing?"</p>
+            </div>
+          </section> -->
+        <!-- </section> -->
+
+        <!-- Strategies & Best Practices Section -->
+        <section>
+          <section>
+            <h2>💡 Strategies & Best Practices</h2>
+            <h3>Level up your vibe coding skills</h3>
+          </section>
+
+          <!-- Why Browser-Based? -->
+          <section>
+            <h2>🌐 Start Browser-Based</h2>
+            <div class="quote">Prompt: Create a one page index.html only using HTML, CSS and JS with ...</div>
+            <ul>
+              <li>💼 Works on managed laptops</li>
+              <li>🚫 No installation barriers</li>
+              <li>⚡ Instant feedback</li>
+              <li>🔒 Safe sandbox (data stays local)</li>
+              <li>💪 Surprisingly powerful (CSV, APIs, complex logic)</li>
+            </ul>
+          </section>
+
+          <!-- Prompting Strategies -->
+          <section>
+            <h2>💬 Prompting Strategies</h2>
+            <h3 class="highlight">Bad prompts vs Good prompts</h3>
+            <div class="strategy-card">
+              <p>❌ Vague: "Make a data tool"</p>
+            </div>
+            <div class="strategy-card">
+              <p>✅ Specific: "Make an HTML page where I can upload a CSV and see products with missing images"</p>
+            </div>
+            <div class="strategy-card">
+              <p>❌ Vague: "Make it better"</p>
+            </div>
+            <div class="strategy-card">
+              <p>✅ Specific: "Add error messages when the file format is wrong, and show them in red text"</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>💬 Progressive Refinement</h2>
+            <div class="strategy-card">
+              <h4>🎯 Build your prompt in layers:</h4>
+              <ol>
+                <li>Start broad: "I have a CSV file with product data. Make an index.html where I can upload it and show the data in a table."</li>
+                <li>Add details: "Find products where description is under 50 characters"</li>
+                <li>Refine UX: "Show those products in a list, with a count at the top"</li>
+                <li>Polish: "Add a search box to filter the list"</li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Code Review with AI -->
+          <!-- <section>
+            <h2>🔍 Code Review with AI</h2>
+            <h3 class="highlight">Teach AI to be your reviewer</h3>
+            <div class="strategy-card fragment">
+              <h4>💭 Questions to ask:</h4>
+              <ul>
+                <li>"Review this code for clarity and best practices"</li>
+                <li>"What edge cases am I not handling?"</li>
+                <li>"Is there a simpler way to do this?"</li>
+                <li>"Explain what this function does like I'm a junior developer"</li>
+              </ul>
+            </div>
+          </section> -->
+
+          <!-- Debugging with AI -->
+          <section>
+            <h2>🐛 Debugging with AI</h2>
+            <h3 class="highlight">When things break</h3>
+            <div class="strategy-card">
+              <h4>🔧 Effective debugging strategies:</h4>
+              <ul>
+                <li>✅ Copy the error message: "I got this error: [paste]. What does it mean?"</li>
+                <li>✅ Describe the behavior: "When I click the button, nothing happens. Here's my code:"</li>
+                <li>✅ Show what you expected: "This should filter the table, but it shows all rows"</li>
+              </ul>
+            </div>
+            <div class="quote">
+              "AI is patient. It won't judge. Use it to learn." 🎓
+            </div>
+          </section>
+        </section>
+
+        <!-- Mindset & Value Proposition -->
+        <section>
+          <section>
+            <h2>💭 Mindset & Value Proposition</h2>
+            <h3>How to think about value</h3>
+          </section>
+
+          <section>
+            <h2>🎯 For Any Business Problem, Ask:</h2>
+            <div class="strategy-card">
+              <h4>📊 Am I doing this repeatedly?</h4>
+              <p>→ Automate it 🤖</p>
+            </div>
+            <div class="strategy-card">
+              <h4>⏰ Is this taking too long?</h4>
+              <p>→ Speed it up ⚡</p>
+            </div>
+            <div class="strategy-card">
+              <h4>❌ Am I making mistakes?</h4>
+              <p>→ Add validation ✅</p>
+            </div>
+            <div class="strategy-card">
+              <h4>👥 Could others benefit?</h4>
+              <p>→ Make it reusable 📦</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>💡 The Real Power of Vibe Coding</h2>
+            <!-- <p class="fragment"><span class="highlight">It's not about replacing developers</span>, it's about:</p> -->
+            <ul>
+              <li>✅ <span class="highlight">Prototyping</span> ideas quickly before requesting formal development</li>
+              <li>✅ <span class="highlight">Learning</span> programming concepts through doing</li>
+              <li>✅ <span class="highlight">Autonomy</span> for solving small problems yourself</li>
+              <li>✅ <span class="highlight">Communication</span> - describe problems more precisely to developers</li>
+              <li>✅ <span class="highlight">Collaboration</span> - understanding code helps you work with technical teams</li>
+            </ul>
+          </section>
+
+          <!--section>
+            <h2>🤖 Claude Code Specifically Adds</h2>
+            <ul>
+              <li class="fragment">📁 Workspace awareness (understands your project structure)</li>
+              <li class="fragment">📝 File operations (can edit multiple files)</li>
+              <li class="fragment">💻 Terminal access (can run tests, builds, git)</li>
+              <li class="fragment">🚀 Better for developers extending Vibe Coding to real projects</li>
+            </ul>
+          </section-->
+        </section>
+
+        <!-- Key Takeaways -->
+        <section>
+          <h2>🎯 Key Takeaways</h2>
+          <ol>
+            <li>📏 <span class="highlight">Start small</span> - One feature at a time</li>
+            <li>🎯 <span class="highlight">Be specific</span> - Clear inputs, outputs, and goals</li>
+            <li>🔄 <span class="highlight">Iterate</span> - Test, refine, repeat</li>
+            <li>❓ <span class="highlight">Ask for help</span> - Use AI as a reviewer and teacher</li>
+            <li>💎 <span class="highlight">Think value</span> - Solve real problems, not toy examples</li>
+          </ol>
+        </section>
+
+        <!-- Privacy & Safety -->
+        <section>
+          <h2>🔒 Privacy & Safety</h2>
+          <div class="strategy-card">
+            <h4>⚠️ Never paste sensitive data:</h4>
+            <ul>
+              <li>Customer info</li>
+              <li>Credentials</li>
+              <li>Private keys</li>
+            </ul>
+          </div>
+          <div class="strategy-card">
+            <h4>✅ Best practices:</h4>
+            <ul>
+              <li>Use sample data or anonymized exports</li>
+              <li>Browser-based tools keep data local</li>
+              <li>Review generated code before running</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Hands-on Challenge -->
+        <section>
+          <h2>🚀 Hands-on Challenge</h2>
+          <div class="quote">
+            "Think of something you do repeatedly in your job that involves checking, transforming, or visualizing information." 💭
+          </div>
+          <p>After this session, try describing it to ChatGPT and see what happens! 🎯</p>
+          <h3 class="highlight">✨ Let's Begin! 🚀</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        transition: 'slide',
+        transitionSpeed: 'default',
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
