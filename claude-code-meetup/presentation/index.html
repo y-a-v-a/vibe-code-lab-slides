@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css"
@@ -25,7 +28,13 @@
       }
 
       html head + body.reveal-viewport {
-        background-image: linear-gradient(-45deg, #c794d9, #9ca8dd, #64c5f7, #dcedc8) !important;
+        background-image: linear-gradient(
+          -45deg,
+          #c794d9,
+          #9ca8dd,
+          #64c5f7,
+          #dcedc8
+        ) !important;
         background-size: 400% 400% !important;
         animation: gradientShift 16s ease infinite !important;
       }
@@ -49,7 +58,7 @@
       }
 
       .reveal {
-        font-family: 'Roboto Mono', monospace;
+        font-family: "Roboto Mono", monospace;
       }
 
       .reveal .slides section {
@@ -60,7 +69,7 @@
       .reveal h2,
       .reveal h3 {
         color: #6a1b9a;
-        font-family: 'Roboto Mono', monospace;
+        font-family: "Roboto Mono", monospace;
       }
 
       .reveal .title-slide h1 {
@@ -68,8 +77,8 @@
       }
 
       .date-text {
-        font-size: 0.8em;
-        color: #666;
+        font-size: 0.6em;
+        color: #6a1b9a;
         margin-top: 10px;
       }
 
@@ -110,46 +119,178 @@
       <div class="slides">
         <!-- Opening Slide with Image -->
         <section>
-          <img src="IMG_6210.PNG" alt="Vibe Coding" style="max-width: 33%; max-height: 80vh; margin: auto;" />
+        <section>
+          <h1>👋 Welcome!</h1>
+          <h2>🤖 Claude Code meetup</h2>
+          <p class="date-text">📅 Thursday 2025-12-11<br>📍 The Social Hub City, Amsterdam</p>
+          <h3>🎉 sponsor: Anthropic</h3>
+        </section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>Vincent Bruijn</li>
+            <li>Daniel de Vos</li>
+            <li>Eugene Ter-Avakyan</li>
+            <li>Q&A Daisy Hollman - Anthropic</li>
+            <li>🧃 Drink at the bar</li>
+          </ul>
+        </section>
+        </section>
+
+        <section>
+          <img src="IMG_6210.PNG" alt="Vibe Coding" class="r-stretch" />
+          <p class="date-text">📙 Vibe Coding, Steve Yegge, Gene Kim, 2025</p>
         </section>
 
         <section>
           <section>
-            <img src="Claude-Code-launch-message.png" alt="Vibe Coding" style="max-height: 80vh; margin: auto;" />
+            <h3>Claude Artifacts</h3>
+            <img src="Claude-web.png" alt="Vibe Coding" class="r-stretch" />
+            <p class="date-text">Generate code in Claude chat on the web</p>
+          </section>
+          
+          <section>
+            <img src="Claude-desktop.png" alt="Vibe Coding" class="r-stretch" />
+            <p class="date-text">Generate code in Claude on the desktop app</p>
+          </section>
+
+          <section>
+            <h2>Limitations</h2>
+            <ul>
+              <li>📝 Little version control</li>
+              <li>📦 Output size issues</li>
+              <li>💬 Persistence only within chat</li>
+              <li>🔌 Limited dependencies</li>
+              <li>📁 No file access</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <img
+              src="Claude-Code-CLI-1.png"
+              alt="Vibe Coding"
+              class="r-stretch"
+            />
+            <p class="date-text">The OG Claude Code CLI tool (NOT an IDE!)</p>
+          </section>
+
+          <section>
+            <img
+              src="Claude-Code-launch-message.png"
+              alt="Vibe Coding"
+              class="r-stretch"
+            />
+            <p class="date-text">Original launch message, Feb 24th, 2025</p>
           </section>
 
           <section>
             <h2>March 5th, 2025</h2>
             <h3>Public launch on NPM</h3>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">`npm install -g <a href="https://twitter.com/Anthropic?ref_src=twsrc%5Etfw">@anthropic</a>-ai/claude-code`<br><br>there&#39;s no more waitlist. have fun!</p>&mdash; cat (@_catwu) <a href="https://twitter.com/_catwu/status/1897125032679399772?ref_src=twsrc%5Etfw">March 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                `npm install -g
+                <a href="https://twitter.com/Anthropic?ref_src=twsrc%5Etfw"
+                  >@anthropic</a
+                >-ai/claude-code`<br /><br />there&#39;s no more waitlist. have
+                fun!
+              </p>
+              &mdash; cat (@_catwu)
+              <a
+                href="https://twitter.com/_catwu/status/1897125032679399772?ref_src=twsrc%5Etfw"
+                >March 5, 2025</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+            <p class="date-text">Catherine Wu, PM, Anthropic</p>
           </section>
 
           <section>
-            <img src="Claude-Code-CLI-1.png" alt="Vibe Coding" style="max-height: 80vh; margin: auto;" />
+            <h3>OG version was unpolished but powerful</h3>
+            <ul>
+              <li>⛺️ Very basic</li>
+              <li>👍🏾 Limited rate limits</li>
+              <li>✅ Explicit to-do lists</li>
+              <li>👩🏼‍💻 Very eager</li>
+              <li>🌍 No web access (added after 2 weeks)</li>
+            </ul>
           </section>
+
+          <section>
+            <h3>🌱 Matured over the past months</h3>
+            <ul>
+              <li>🪝 Hooks</li>
+              <li>⚡ Custom slash commands</li>
+              <li>✨ Better CLI UI</li>
+              <li>🚀 Extended <code>claude</code> capabilities (beyond coding)</li>
+              <li>💎 Better Developer UX</li>
+            </ul>
+          </section>
+
         </section>
-        
+
         <section>
           <section>
-            <img src="Claude-web.png" alt="Vibe Coding" style="max-height: 80vh; margin: auto;" />
+            <h2>🚀 Recent developments</h2>
+            <ul>
+              <li>🌐 Even more portability</li>
+              <li>🚢 Containerized runtimes</li>
+              <li>🔒 Isolated runtime</li>
+              <li>🌍 Limited web access</li>
+            </ul>
           </section>
-
           <section>
-            <img src="Claude-desktop.png" alt="Vibe Coding" style="max-height: 80vh; margin: auto;" />
+            <img
+            src="Claude-Code-on-the-web.png"
+            alt="Vibe Coding"
+            class="r-stretch"
+            />
+            <p class="date-text">Claude Code on the web</p>
           </section>
-
+          
           <section>
-            <img src="Claude-Code-on-the-web.png" alt="Vibe Coding" style="max-height: 80vh; margin: auto;" />
+            <img
+            src="Claude-Code-on-desktop.png"
+            alt="Vibe Coding"
+            class="r-stretch"
+            />
+            <p class="date-text">Claude Code via desktop app</p>
           </section>
-
+        
           <section>
-            <img src="Claude-Code-on-desktop.png" alt="Vibe Coding" style="max-height: 85vh; margin: auto;" />
+            <h3>📱 Claude Code mobile</h3>
+            <div style="display: flex;">
+              <img style="width: 20%; margin-right: 10%"
+              src="Claude-Code-iOS.png"
+              alt="Vibe Coding"
+              />
+              <ul>
+                <li>🚶‍♀️‍➡️ On the go</li>
+                <li>⚙️ GitHub connected</li>
+                <li>🚀 Code Anywhere!</li>
+              </ul>
+            </div>
           </section>
-
-
-
         </section>
 
+        <section>
+          <section>
+            <h2>Advanced usage</h2>
+          </section>
+
+          <section>
+            <img
+              class="r-stretch"
+              src="Claude-Code-hooks-notifications.png"
+              alt="Vibe Coding"
+            />
+          </section>
+        </section>
       </div>
     </div>
 
@@ -160,8 +301,8 @@
     <script>
       Reveal.initialize({
         hash: true,
-        transition: 'slide',
-        transitionSpeed: 'default',
+        transition: "slide",
+        transitionSpeed: "default",
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
     </script>
