@@ -85,6 +85,7 @@
       .reveal .slides section .fragment {
         opacity: 0.3;
       }
+
       .reveal .slides section .fragment.visible {
         opacity: 1;
       }
@@ -112,6 +113,14 @@
         color: #6a1b9a;
         font-weight: bold;
       }
+
+      .claude {
+        color: #d97757;
+      }
+
+      .small {
+        font-size: 0.4em;
+      }
     </style>
   </head>
   <body>
@@ -119,22 +128,24 @@
       <div class="slides">
         <!-- Opening Slide with Image -->
         <section>
-        <section>
-          <h1>👋 Welcome!</h1>
-          <h2>🤖 Claude Code meetup</h2>
-          <p class="date-text">📅 Thursday 2025-12-11<br>📍 The Social Hub City, Amsterdam</p>
-          <h3>🎉 sponsor: Anthropic</h3>
-        </section>
-        <section>
-          <h2>Agenda</h2>
-          <ul>
-            <li>Vincent Bruijn</li>
-            <li>Daniel de Vos</li>
-            <li>Eugene Ter-Avakyan</li>
-            <li>Q&A Daisy Hollman - Anthropic</li>
-            <li>🧃 Drink at the bar</li>
-          </ul>
-        </section>
+          <section>
+            <h1>👋 Welcome!</h1>
+            <h2>🤖 Claude Code meetup</h2>
+            <p class="date-text">
+              📅 Thursday 2025-12-11<br />📍 The Social Hub City, Amsterdam
+            </p>
+            <h3>🎉 sponsor: Anthropic</h3>
+          </section>
+          <section>
+            <h2>Agenda</h2>
+            <ul>
+              <li>Vincent Bruijn</li>
+              <li>Daniel de Vos</li>
+              <li>Eugene Ter-Avakyan</li>
+              <li>Q&A Daisy Hollman - Anthropic</li>
+              <li>🧃 Drink at the bar</li>
+            </ul>
+          </section>
         </section>
 
         <section>
@@ -148,7 +159,7 @@
             <img src="Claude-web.png" alt="Vibe Coding" class="r-stretch" />
             <p class="date-text">Generate code in Claude chat on the web</p>
           </section>
-          
+
           <section>
             <img src="Claude-desktop.png" alt="Vibe Coding" class="r-stretch" />
             <p class="date-text">Generate code in Claude on the desktop app</p>
@@ -227,11 +238,12 @@
               <li>🪝 Hooks</li>
               <li>⚡ Custom slash commands</li>
               <li>✨ Better CLI UI</li>
-              <li>🚀 Extended <code>claude</code> capabilities (beyond coding)</li>
+              <li>
+                🚀 Extended <code>claude</code> capabilities (beyond coding)
+              </li>
               <li>💎 Better Developer UX</li>
             </ul>
           </section>
-
         </section>
 
         <section>
@@ -246,28 +258,29 @@
           </section>
           <section>
             <img
-            src="Claude-Code-on-the-web.png"
-            alt="Vibe Coding"
-            class="r-stretch"
+              src="Claude-Code-on-the-web.png"
+              alt="Vibe Coding"
+              class="r-stretch"
             />
             <p class="date-text">Claude Code on the web</p>
           </section>
-          
+
           <section>
             <img
-            src="Claude-Code-on-desktop.png"
-            alt="Vibe Coding"
-            class="r-stretch"
+              src="Claude-Code-on-desktop.png"
+              alt="Vibe Coding"
+              class="r-stretch"
             />
             <p class="date-text">Claude Code via desktop app</p>
           </section>
-        
+
           <section>
             <h3>📱 Claude Code mobile</h3>
-            <div style="display: flex;">
-              <img style="width: 20%; margin-right: 10%"
-              src="Claude-Code-iOS.png"
-              alt="Vibe Coding"
+            <div style="display: flex">
+              <img
+                style="width: 20%; margin-right: 10%"
+                src="Claude-Code-iOS.png"
+                alt="Vibe Coding"
               />
               <ul>
                 <li>🚶‍♀️‍➡️ On the go</li>
@@ -280,15 +293,95 @@
 
         <section>
           <section>
-            <h2>Advanced usage</h2>
+            <h2>Advanced use</h2>
+            <ul>
+              <li><span class="claude">✻</span> CLAUDE.md</li>
+              <li>🪝 hooks: enforce tool</li>
+              <li>🪝 hooks: show notifications</li>
+            </ul>
           </section>
 
           <section>
+            <h2>Advanced CLAUDE.md</h2>
+            <ul>
+              <li>
+                Auto-generated CLAUDE.md: focused on operational facets
+                <ul>
+                  <li>what tools to use</li>
+                  <li>what architecture</li>
+                  <li>conventions, gotchas</li>
+                </ul>
+              </li>
+              <li>
+                Refined: make Claude more proactive
+                <ul>
+                  <li>add collaborative rules</li>
+                  <li>when to ask for clarification</li>
+                  <li>when to push back</li>
+                  <li>guide decision making</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Advanced CLAUDE.md</h2>
+            <img
+              class="r-stretch"
+              src="Claude-Code-CLAUDE.md.png"
+              alt="Vibe Coding"
+            />
+            <p class="small">
+              https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md
+            </p>
+          </section>
+
+          <section>
+            <h2>Advanced CLAUDE.md</h2>
+            <img
+              class="r-stretch"
+              src="Claude-Code-CLAUDE.md.2.png"
+              alt="Vibe Coding"
+            />
+            <p class="small">
+              https://github.com/harperreed/dotfiles/blob/master/.claude/CLAUDE.md
+            </p>
+          </section>
+
+          <section>
+            <h3>Hooks – enforce tool use</h3>
+            <p>
+              example: force <span class="highlight">yarn</span> over
+              <span class="highlight">npm</span>
+            </p>
+            <img
+              class="r-stretch"
+              src="Claude-Code-hooks-force-tool.png"
+              alt="Vibe Coding"
+            />
+          </section>
+
+          <section>
+            <h3>Hooks – enforce tool use</h3>
+            <p>Claude understands the error message</p>
+            <video controls width="100%" class="r-stretch" data-autoplay>
+              <source src="Claude-Code-hooks.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </section>
+
+          <section>
+            <h3>Hooks: show notifications</h3>
             <img
               class="r-stretch"
               src="Claude-Code-hooks-notifications.png"
               alt="Vibe Coding"
             />
+          </section>
+          <section>
+            <h3>Hooks: show notifications</h3>
+            <img src="Claude-Code-hooks-notification.png" alt="Vibe Coding" />
+            <p>Show a notification when Claude is asking permissions</p>
           </section>
         </section>
       </div>
@@ -304,6 +397,7 @@
         transition: "slide",
         transitionSpeed: "default",
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        autoPlayMedia: true,
       });
     </script>
   </body>
