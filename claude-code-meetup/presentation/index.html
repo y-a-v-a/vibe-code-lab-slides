@@ -92,11 +92,12 @@
 
       .strategy-card {
         background: rgba(255, 255, 255, 0.9);
-        padding: 20px;
+        padding: 10px;
         margin: 10px;
         border-left: 4px solid #6a1b9a;
         border-radius: 8px;
         backdrop-filter: blur(5px);
+        font-size: 0.8em;
       }
 
       .quote {
@@ -107,6 +108,7 @@
         background: rgba(106, 27, 154, 0.05);
         border-radius: 5px;
         padding: 15px 20px;
+        font-size: 0.8em;
       }
 
       .highlight {
@@ -149,8 +151,43 @@
         </section>
 
         <section>
-          <img src="IMG_6210.PNG" alt="Vibe Coding" class="r-stretch" />
-          <p class="date-text">📙 Vibe Coding, Steve Yegge, Gene Kim, 2025</p>
+          <section>
+
+            <img src="IMG_6210.PNG" alt="Vibe Coding" class="r-stretch" />
+            <p class="date-text">📙 Vibe Coding, Steve Yegge, Gene Kim, 2025</p>
+          </section>
+                  <!-- What is Vibe Coding? -->
+        <section>
+          <h2>✨ What is Vibe Coding?</h2>
+          <div class="quote">
+            "Intent based, conversational, iterative development with AI as a partner" 🤝
+          </div>
+          <div style="font-size: 0.8em">
+            <p><span class="highlight">Not:</span> Giving up control or blindly accepting code&nbsp;❌</p>
+            <p><span class="highlight">Is:</span> Rapid prototyping, learning, and refinement&nbsp;✅</p>
+          </div>
+          <div style="font-size: 0.8em">
+            <h3>🔄 Key Mindset Shift</h3>
+            <p>From <em>"I need to know how"</em> to <em>"I need to articulate what"</em> 💡</p>
+          </div>
+        </section>
+
+        <!-- The Vibe Coding Workflow -->
+        <section>
+          <h2>🔄 The Vibe Coding Workflow</h2>
+          <h3 class="highlight">The Core Loop</h3>
+          <div class="strategy-card">
+            <h4>Describe → Generate → Test → Refine → Repeat</h4>
+          </div>
+          <div style="font-size: 0.8em">
+            <p><span class="highlight">Each step is:</span></p>
+            <ul>
+              <li>📏 Small and testable</li>
+              <li>🧱 Builds on the last</li>
+              <li>⚡ Quick to validate</li>
+            </ul>
+          </div>
+        </section>
         </section>
 
         <section>
@@ -163,6 +200,15 @@
           <section>
             <img src="Claude-desktop.png" alt="Vibe Coding" class="r-stretch" />
             <p class="date-text">Generate code in Claude on the desktop app</p>
+          </section>
+
+          <section>
+            <h2>Great for</h2>
+            <ul>
+              <li>🎨 Quick prototyping</li>
+              <li>👧🏻 Small sketches</li>
+              <li>💡 Ideation</li>
+            </ul>
           </section>
 
           <section>
@@ -244,6 +290,15 @@
               <li>💎 Better Developer UX</li>
             </ul>
           </section>
+
+          <section>
+            <h3>🖥️ Also in VS Code!</h3>
+            <img
+              src="Claude-Code-VS-Code.png"
+              alt="Vibe Coding"
+              class="r-stretch"
+            />
+          </section>
         </section>
 
         <section>
@@ -291,34 +346,116 @@
           </section>
         </section>
 
+
+        <section>
+          <!-- <section>
+            <h2>💡 Strategies & Best Practices</h2>
+            <h3>Level up your vibe coding skills</h3>
+          </section> -->
+
+          <!-- Why Browser-Based? -->
+          <!-- <section>
+            <h2>🌐 Start Browser-Based</h2>
+            <div class="quote">Prompt: Create a one page index.html only using HTML, CSS and JS with ...</div>
+            <ul>
+              <li>🚫 No installation barriers</li>
+              <li>⚡ Instant feedback</li>
+              <li>🔒 Safe sandbox (data stays local)</li>
+              <li>💪 Surprisingly powerful (CSV, APIs, complex logic)</li>
+            </ul>
+          </section> -->
+
+          <!-- Prompting Strategies -->
+          <section>
+            <h2>💬 Prompting Strategies</h2>
+            <p>Bad prompts vs Good prompts</p>
+            <div class="strategy-card">
+              <p>❌ Vague: "Make a git analytics tool"</p>
+            </div>
+            <div class="strategy-card">
+              <p>✅ Specific: "Make a git analytics tool that shows the busiest days of the week"</p>
+            </div>
+            <div class="strategy-card">
+              <p>❌ Vague: "Make it better"</p>
+            </div>
+            <div class="strategy-card">
+              <p>✅ Specific: "Add error messages when the file format is wrong, show them in red text"</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>💬 Progressive Refinement</h2>
+            <div class="strategy-card">
+              <h4>🎯 Build your prompt in layers:</h4>
+              <ol>
+                <li>Start broad: "Make me a bash script that can analyze this git repository."</li>
+                <li>Add details: "Add a CLI arg for contributors per week, month"</li>
+                <li>Refine UX: "Show bar chart in CLI for commits during the day"</li>
+                <li>Polish: "Add bar chart for contributor count per month"</li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Code Review with AI -->
+          <!-- <section>
+            <h2>🔍 Code Review with AI</h2>
+            <h3 class="highlight">Teach AI to be your reviewer</h3>
+            <div class="strategy-card fragment">
+              <h4>💭 Questions to ask:</h4>
+              <ul>
+                <li>"Review this code for clarity and best practices"</li>
+                <li>"What edge cases am I not handling?"</li>
+                <li>"Is there a simpler way to do this?"</li>
+                <li>"Explain what this function does like I'm a junior developer"</li>
+              </ul>
+            </div>
+          </section> -->
+
+          <!-- Debugging with AI -->
+          <section>
+            <h2>🐛 Debugging with AI</h2>
+            <p>When things break</p>
+            <div class="strategy-card">
+              <h4>🔧 Effective debugging strategies:</h4>
+              <ul>
+                <li>✅ Copy the error message: "I got this error: [paste]. What does it mean?"</li>
+                <li>✅ Describe the behavior: "When I click the button, nothing happens. Here's my code:"</li>
+                <li>✅ Show what you expected: "This should filter the table, but it shows all rows"</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+
         <section>
           <section>
             <h2>Advanced use</h2>
             <ul>
-              <li><span class="claude">✻</span> CLAUDE.md</li>
-              <li>🪝 hooks: enforce tool</li>
-              <li>🪝 hooks: show notifications</li>
+              <li><span class="claude">✻</span> normative CLAUDE.md</li>
+              <li>🪝 hooks: enforce tool use</li>
+              <li>⚓️ hooks: show notifications</li>
+              <li>💻 General purpose claude cli<br>(non-coding)</li>
             </ul>
           </section>
 
           <section>
             <h2>Advanced CLAUDE.md</h2>
-            <ul>
+            <ul style="font-size: 0.8em">
               <li>
-                Auto-generated CLAUDE.md: focused on operational facets
+                🤖 Project scope: can be auto-generated
                 <ul>
-                  <li>what tools to use</li>
-                  <li>what architecture</li>
-                  <li>conventions, gotchas</li>
+                  <li>🔧 what tools to use</li>
+                  <li>🏗️ what architecture</li>
+                  <li>📋 conventions, gotchas</li>
                 </ul>
               </li>
               <li>
-                Refined: make Claude more proactive
+                ✨ Global: make Claude more proactive
                 <ul>
-                  <li>add collaborative rules</li>
-                  <li>when to ask for clarification</li>
-                  <li>when to push back</li>
-                  <li>guide decision making</li>
+                  <li>🤝 add collaborative rules</li>
+                  <li>❓ when to ask for clarification</li>
+                  <li>🛑 when to push back</li>
+                  <li>🧭 guide decision making</li>
                 </ul>
               </li>
             </ul>
@@ -336,7 +473,7 @@
             </p>
           </section>
 
-          <section>
+          <!-- <section>
             <h2>Advanced CLAUDE.md</h2>
             <img
               class="r-stretch"
@@ -346,7 +483,7 @@
             <p class="small">
               https://github.com/harperreed/dotfiles/blob/master/.claude/CLAUDE.md
             </p>
-          </section>
+          </section> -->
 
           <section>
             <h3>Hooks – enforce tool use</h3>
@@ -378,10 +515,43 @@
               alt="Vibe Coding"
             />
           </section>
+
           <section>
             <h3>Hooks: show notifications</h3>
             <img src="Claude-Code-hooks-notification.png" alt="Vibe Coding" />
             <p>Show a notification when Claude is asking permissions</p>
+          </section>
+
+          <section>
+            <h3>Other hook uses</h3>
+            <ul style="font-size: 0.8em">
+              <li>
+                💾 Checkpoint commits after file changes
+                <ul>
+                  <li>"auto save"</li>
+                </ul>
+              </li>
+              <li>🔗 Dependency graph enforcement
+                <ul>
+                  <li>deny frontend to import from backend</li>
+                </ul>
+              </li>
+              <li>🔐 Credential and secret sanitization
+                <ul>
+                  <li>check for patterns</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>general purpose use</h3>
+            <ul>
+              <li>✍🏽 claude for writing</li>
+              <li>📊 claude for data analysis</li>
+              <li>📄 claude for document analysis</li>
+              <li>❓ claude for questionaires</li>
+            </ul>
           </section>
         </section>
       </div>
