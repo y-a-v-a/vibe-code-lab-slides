@@ -2,6 +2,7 @@
 
 I gave 4 presentations on AI assisted coding in 2025
 
+## Dates
 
 - May 27th 2025
 	- **Recent discoveries and experiences with AI-aided coding**
@@ -19,6 +20,17 @@ I gave 4 presentations on AI assisted coding in 2025
 	- **Claude Code flavors and strategies, How and where can Claude Code shine for you**
 	- _Claude Code meetup, The Social Hub City, Amsterdam_
 	- Audience consisted of ±50 curious attendees
+
+
+## Slide examples
+
+![Slide Example](ai-aided-coding/assets/slide-example.png)
+
+![Slide Example](vibe-coding-lab/assets/slide-22-33-16.png)
+
+![Slide Example](vibe-coding-tutorial/assets/slide-example.png)
+
+![Slide Example](claude-code-meetup/presentation/assets/slide-example-02.png)
 
 (c) 2025 - Vincent Bruijn <vebruijn@gmail.com>
 
