@@ -1,6 +1,6 @@
 # AI Assisted Coding presentations
 
-I gave 4 presentations on AI assisted coding in 2025
+I gave 4 presentations on Vibe Coding, AI engineering and Claude Code coding in 2025
 
 ## Dates
 
@@ -18,7 +18,7 @@ I gave 4 presentations on AI assisted coding in 2025
 	- Audience consisted of ±12 colleagues
 - December 11th 2025
 	- **Claude Code flavors and strategies, How and where can Claude Code shine for you**
-	- _Claude Code meetup, The Social Hub City, Amsterdam_
+	- _Anthropic supported Claude Code meetup, The Social Hub City, Amsterdam_
 	- Audience consisted of ±50 curious attendees
 
 
